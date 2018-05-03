@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>IMDB</title>
+    <link rel="stylesheet" href="index.css"/>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <!--<div id="root"></div>-->
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+
+    <nav class="flex-container">
+        <img src="https://vignette.wikia.nocookie.net/fragile/images/5/50/Imdb-iphone.png/revision/latest?cb=20160922130858" alt="IMDB logo">
+        <table>
+          <tr>
+          <form method="get" action="/find" class="nav-searchbar-inner" id="navbar-form">search:
+           <div id="navBarSearch">
+             <input type="text" name="search" placeholder="Find what you want to watch!">
+             <button id="navbar-submit-button" class="primary btn" type="submit">
+                <div>Search Now</div>
+              </button>
+         </form>
+          </tr>
+             <table id="watchMenu">
+              <ul id="main_nav">
+                <li class="spacer"></li>
+                <li class="main_nav">
+                 <p>
+                   <a href="https://www.imdb.com/movies-in-theaters/?ref_=nv_tp_inth_1">Movie</a>,
+                   <a href="https://www.imdb.com/chart/toptv/?ref_=nv_tp_tv250_2">TV</a>, &
+                   <br>
+                   <a href="https://www.imdb.com/showtimes/?ref_=nv_tp_sh_3">Showtimes</a>
+                 </p>
+                </li>
+                <li class="spacer"></li>
+                <li class="main_nav">
+                 <p>
+                        <a href="https://www.imdb.com/search/name?gender=male,female&ref_=nv_tp_cel_1">Celebs</a>,
+                        <a href="https://www.imdb.com/awards-central/?ref_=nv_tp_awrd_2">Events</a>, &
+                        <br>
+                        <a href="https://www.imdb.com/gallery/rg784964352?ref_=nv_tp_ph_3">Photos</a>
+                      </p>
+                <li class="spacer"></li>
+                <li class="main_nav">
+                  <p>
+                        <a href="https://www.imdb.com/news/top?ref_=nv_tp_nw_1">News</a>, &
+                        <br>
+                        <a href="https://www.imdb.com/czone/?ref_=nv_cm_cz_2">Community</a>
+                      </p>
+                <li class="spacer"></li>
+                <li class="main_nav">
+                  <p>
+                        <a href="https://www.imdb.com/news/top?ref_=nv_tp_nw_1">Watchlist</a>
+                      </p>
+                <li class="spacer"></li>
+              </ul>
+             </table>
+             </table>
+
+      </table>
+    </nav>
+
+
+
+    <div id="mainpage">
+      <h1>Ferris Bueller's Day Off (1986)</h1>
+      <img src="http://img.moviepostershop.com/ferris-buellers-day-off-movie-poster-1986-1010468436.jpg">
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/uhiCFdWeQfA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+  </body>
+</html>

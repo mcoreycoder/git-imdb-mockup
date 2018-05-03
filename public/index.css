@@ -1,0 +1,13 @@
+nav{
+    background-color: grey;
+}
+.flex-container {
+    display: flex;
+}
+body {
+    background-color: black;
+}
+
+h1 {
+    color: white;
+}
